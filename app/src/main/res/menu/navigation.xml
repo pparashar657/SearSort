@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_code"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Source Code" />
+
+    <item
+        android:id="@+id/navigation_trycode"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Try Code" />
+
+</menu>
