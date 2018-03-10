@@ -19,19 +19,6 @@ public class GetTechnique {
         result.add(new Technique("Radix Sort",Constants.radix_sort));
         result.add(new Technique("Bucket Sort",Constants.bucket_sort));
         result.add(new Technique("Shell Sort",Constants.shell_sort));
-        result.add(new Technique("Tim Sort",Constants.tim_sort));
-        result.add(new Technique("Comb Sort",Constants.comb_sort));
-        result.add(new Technique("PigeonHole Sort",Constants.pigeonhole_sort));
-        result.add(new Technique("Cycle Sort",Constants.cycle_sort));
-        result.add(new Technique("CockTail Sort",Constants.cocktail_sort));
-        result.add(new Technique("Bitonic Sort",Constants.bitonic_sort));
-        result.add(new Technique("PanCake Sort",Constants.pancake_sort));
-        result.add(new Technique("Bogo Sort",Constants.bogo_sort));
-        result.add(new Technique("Gnome Sort",Constants.gnome_sort));
-        result.add(new Technique("Sleep Sort",Constants.sleep_sort));
-        result.add(new Technique("Stooge Sort",Constants.stooge_sort));
-        result.add(new Technique("Tree Sort",Constants.tree_sort));
-        result.add(new Technique("Brick Sort",Constants.brick_sort));
         return result;
     }
     public static ArrayList<Technique> getSearchingTechnique(){
