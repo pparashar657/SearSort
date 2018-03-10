@@ -32,8 +32,32 @@ public class TrySearchCodeFragment extends Fragment {
                 EditText inputnum = (EditText) view1.findViewById(R.id.inputnumber);
                 String strnum = inputnum.getEditableText().toString();
                 String inputarray = inputtext.getEditableText().toString();
-                if(inputarray.equals("")||strnum.equals("")){
-                    Snackbar.make(view1,"Empty String Found!!!!",Snackbar.LENGTH_INDEFINITE).show();
+                TextView resulttextView = (TextView) view1.findViewById(R.id.result);
+                int q;
+                for(q=0;q<strnum.length();q++){
+                    if(strnum.charAt(q)==' ')
+                        break;
+                }
+                strnum = strnum.substring(0,q);
+                int p = 0;
+                for(int i=0;i<inputarray.length();i++){
+                    char temp = inputarray.charAt(i);
+                    if(!Character.isDigit(temp)&&temp!=' ') {
+                        p++;
+                    }
+                }
+                for(int i=0;i<strnum.length();i++){
+                    char temp = strnum.charAt(i);
+                    if(!Character.isDigit(temp)&&temp!=' ') {
+                        p++;
+                    }
+                }
+                if(inputarray.length()==0||strnum.length()==0){
+                    p=1;
+                }
+                if(p>0){
+                    resulttextView.setText("");
+                    Snackbar.make(view1,"BAD INPUT FOUND!!!!",Snackbar.LENGTH_LONG).show();
                 }else {
                     Scanner scanner = new Scanner(inputarray);
                     ArrayList<Integer> input = new ArrayList<>();
@@ -57,7 +81,6 @@ public class TrySearchCodeFragment extends Fragment {
                     if (c == -1) {
                         result = "Number " + num + " is not found ";
                     }
-                    TextView resulttextView = (TextView) view1.findViewById(R.id.result);
                     resulttextView.setText(result);
                 }
             }

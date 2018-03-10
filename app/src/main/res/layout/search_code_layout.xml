@@ -27,7 +27,7 @@
         android:id="@+id/inputnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.153" />
 
     <Button
         android:id="@+id/searchbutton"
@@ -65,10 +65,9 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchbutton"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.406" />
 
 
 </android.support.constraint.ConstraintLayout>
